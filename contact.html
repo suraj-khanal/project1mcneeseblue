@@ -1,0 +1,129 @@
+<!--
+    Name: Prajwal Dhungana
+    Date: 11-02-2022
+-->
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>Arrivederci Pizza Place | Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">       
+        <div class = "container">
+            <div class = "navbar">
+                <div class = "logo">
+                    <a href="index.html"><img src="Images/pizzalogo.png" width="130px" ></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="category.html">Category </a></li>
+                        <li><a href="about.html">About </a></li>
+                        <li><a href="contact.html">Contact </a></li>
+                        <li><a href="account.html">Account </a></li>                   
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="Images/cart.png" width = "30px" height="30px"></a>
+                <img src="Images/menu.png"class = "menu-icon" onclick ="menutoggle()">
+            </div>
+
+            <div class="contact-info">
+                <style type="text/css">
+                      
+                    h2 {
+                        color: rgb(0, 0, 0);
+                    }
+                    iframe{
+                        display: center;
+                        height: 400px;
+                        width: 900px;
+                        position: relative;
+                    }
+                </style>
+                <h2>
+                    Locate Our Pizza Restaurant In Map:
+                </h2>
+                <div>
+                    <!-- Adding link to arrivederci pizza place in map-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.080662356844!2d-93.21740848454662!3d30.17768971921995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863b86f0ccd9c2b3%3A0x217c9407c6c70979!2sMcNeese%20State%20University!5e0!3m2!1sen!2sus!4v1667512654889!5m2!1sen!2sus" width="560" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <p>Please contact us at <b> <u>800-456-7876</u></b>  <br> for Customer Support</p>
+                    </div>
+                    <div class="col-2">
+                        <p>If you have questions regarding your purchases <br>
+                            Email us at: purchaseinfo@pizzapalace.com</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--------------footer----------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="Images/play-store.png">
+                            <img src="Images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="Images/pizzalogo.png" width="200px" height="200px">
+                        <p>Our goal to serve people with <br>the best fast food in town.
+                        <br> <b>Have it your way.</b> </p> 
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li> 
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright"> Copyright 2022 - Mcneese Blue</p>
+            </div>
+        </div>
+        <!----------js for toggle menu ---------->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>
